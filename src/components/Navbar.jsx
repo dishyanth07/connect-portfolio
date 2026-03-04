@@ -39,10 +39,10 @@ export default function Navbar() {
                 {/* Logo */}
                 <NavLink to="/" className="flex items-center gap-3 no-underline group cursor-pointer">
                     <div className="w-10 h-10 bg-[var(--accent)] rounded-lg flex items-center justify-center font-syne font-black text-xl text-black transition-transform group-hover:scale-105">
-                        C
+                        I
                     </div>
                     <div className="flex flex-col">
-                        <span className="font-syne font-bold text-lg tracking-tight text-white leading-none">CONNECT</span>
+                        <span className="font-syne font-bold text-lg tracking-tight text-white leading-none">INFOZ</span>
                         <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Tech & Solutions</span>
                     </div>
                 </NavLink>

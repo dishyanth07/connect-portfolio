@@ -24,10 +24,10 @@ export default function Footer() {
                     <div>
                         <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '16px' }}>
                             <div style={{ width: '36px', height: '36px', background: 'var(--accent)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Syne, sans-serif', fontWeight: 900, fontSize: '16px', color: '#000' }}>
-                                C
+                                I
                             </div>
                             <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '20px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                                CONNECT
+                                INFOZ
                             </span>
                         </NavLink>
                         <p style={{ color: '#71717a', fontSize: '14px', lineHeight: '1.7', maxWidth: '220px', fontWeight: 400 }}>
@@ -97,7 +97,7 @@ export default function Footer() {
                 {/* Bottom bar: copyright left, social icons right */}
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <p style={{ color: '#3f3f46', fontSize: '13px', fontWeight: 400 }}>
-                        © {currentYear} CONNECT. All rights reserved.
+                        © {currentYear} INFOZ. All rights reserved.
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                         {socials.map((s, idx) => (

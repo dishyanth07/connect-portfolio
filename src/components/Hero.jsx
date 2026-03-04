@@ -71,7 +71,7 @@ export default function Hero() {
                     </div>
 
                     <h1 className="display-xl mb-6">
-                        <span className="gradient-text-white">CONNECT</span>
+                        <span className="gradient-text-white">INFOZ</span>
                         <br />
                         <span className="text-zinc-500">Tech & Solutions.</span>
                     </h1>

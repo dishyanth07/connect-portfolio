@@ -52,7 +52,7 @@ export default function About({ simple, hideHeader }) {
                                         I'm <span style={{ color: '#fff', fontWeight: 600 }}>Dishyanth Saravanan</span>, a Web & App Developer and Freelancer based in Tamil Nadu. I specialize in building websites, applications, and management systems that are simple, scalable, and user-friendly.
                                     </p>
                                     <p style={{ color: '#555', lineHeight: 1.9, fontSize: '0.9rem' }}>
-                                        Currently pursuing B.Tech in Information Technology (3rd Year), while actively working on real-world projects and building CONNECT – Tech and Solutions with a goal of growing it into a full-scale technology company.
+                                        Currently pursuing B.Tech in Information Technology (3rd Year), while actively working on real-world projects and building INFOZ – Tech and Solutions with a goal of growing it into a full-scale technology company.
                                     </p>
                                 </motion.div>
 

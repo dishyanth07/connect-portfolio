@@ -24,7 +24,7 @@ export default function ServicesPage() {
                             Our <span className="gradient-text">Services.</span>
                         </h1>
                         <p style={{ color: '#71717a', fontSize: '1.125rem', lineHeight: '1.75', maxWidth: '560px', fontWeight: 400 }}>
-                            CONNECT combines strategy, engineering, and design to build powerful digital products and scalable systems.
+                            INFOZ combines strategy, engineering, and design to build powerful digital products and scalable systems.
                         </p>
                     </motion.div>
                 </div>

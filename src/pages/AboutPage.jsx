@@ -14,7 +14,7 @@ export default function AboutPage() {
                         <span className="label-text">The Studio</span>
                     </div>
                     <h1 className="display-xl mb-4">
-                        About <span className="gradient-text">Connect.</span>
+                        About <span className="gradient-text">Infoz.</span>
                     </h1>
                     <p className="text-zinc-500 max-w-2xl text-lg leading-relaxed">
                         A technology-driven creative studio focused on building scalable digital solutions
