@@ -23,9 +23,11 @@ export default function Footer() {
                     {/* Col 1: Brand */}
                     <div>
                         <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '16px' }}>
-                            <div style={{ width: '36px', height: '36px', background: 'var(--accent)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Syne, sans-serif', fontWeight: 900, fontSize: '16px', color: '#000' }}>
-                                I
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="INFOZ Logo"
+                                style={{ width: '36px', height: '36px', objectFit: 'contain' }}
+                            />
                             <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '20px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
                                 INFOZ
                             </span>
