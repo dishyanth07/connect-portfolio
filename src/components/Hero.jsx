@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 
 const PHRASES = [
-    'Innovative Digital Solutions',
-    'Scalable Web Architectures',
-    'Premium User Experiences',
-    'Next-Gen Product Engineering',
+    'Get More Leads & Sales',
+    'Professional Online Presence',
+    'Reliable Monthly Support',
+    'Boost Your Local Business',
 ]
 
 export default function Hero() {
@@ -71,10 +71,14 @@ export default function Hero() {
                     </div>
 
                     <h1 className="display-xl mb-6">
-                        <span className="gradient-text-white">INFOZ</span>
+                        <span className="gradient-text-white">We Build Websites That</span>
                         <br />
-                        <span className="text-zinc-500">Tech & Solutions.</span>
+                        <span className="text-zinc-500">Get You More Customers.</span>
                     </h1>
+
+                    <p className="text-xl text-zinc-400 mb-8 max-w-2xl leading-relaxed">
+                        Professional Web Development + Ongoing Support tailored for small businesses like yours.
+                    </p>
 
                     <div className="h-12 flex items-center mb-10">
                         <span className="font-syne font-bold text-xl md:text-3xl text-zinc-400">
@@ -85,11 +89,11 @@ export default function Hero() {
 
                     <div className="flex flex-wrap gap-4 items-center">
                         <NavLink to="/contact" className="btn btn-white text-lg no-underline px-10 py-5">
-                            Start a Project <span className="ml-2">→</span>
+                            Get Free Website Audit <span className="ml-2">→</span>
                         </NavLink>
-                        <NavLink to="/projects" className="btn btn-outline text-lg no-underline px-10 py-5">
-                            View Work
-                        </NavLink>
+                        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="btn btn-outline text-lg no-underline px-10 py-5">
+                            Chat on WhatsApp
+                        </a>
                     </div>
                 </motion.div>
             </div>

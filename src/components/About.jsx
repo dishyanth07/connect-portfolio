@@ -31,9 +31,9 @@ export default function About({ simple, hideHeader }) {
                     {/* Big intro text */}
                     <motion.div variants={fade(0.1)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '2rem' }}>
                         <h2 className="display-lg" style={{ color: '#fff', maxWidth: '800px', lineHeight: 1.05 }}>
-                            Passionate builder of{' '}
-                            <span className="gradient-text">digital things</span>{' '}
-                            that actually work.
+                            Your partner in{' '}
+                            <span className="gradient-text">business growth</span>{' '}
+                            through digital excellence.
                         </h2>
                         {simple && (
                             <NavLink to="/about" className="btn btn-outline no-underline mb-2">
@@ -49,10 +49,10 @@ export default function About({ simple, hideHeader }) {
                                 {/* Bio */}
                                 <motion.div variants={fade(0.2)} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
                                     <p style={{ color: '#777', lineHeight: 1.9, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                                        I'm <span style={{ color: '#fff', fontWeight: 600 }}>Dishyanth Saravanan</span>, a Web & App Developer and Freelancer based in Tamil Nadu. I specialize in building websites, applications, and management systems that are simple, scalable, and user-friendly.
+                                        We are <span style={{ color: '#fff', fontWeight: 600 }}>INFOZ Agency</span>, a dedicated team of web developers and growth strategists. We specialize in helping local businesses establish a powerful online presence that drives real-world results.
                                     </p>
                                     <p style={{ color: '#555', lineHeight: 1.9, fontSize: '0.9rem' }}>
-                                        Currently pursuing B.Tech in Information Technology (3rd Year), while actively working on real-world projects and building INFOZ – Tech and Solutions with a goal of growing it into a full-scale technology company.
+                                        Our mission is simple: To provide high-quality, conversion-focused web solutions and reliable monthly support, so you can focus on what you do best—running your business.
                                     </p>
                                 </motion.div>
 
@@ -64,11 +64,11 @@ export default function About({ simple, hideHeader }) {
                                     style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}
                                 >
                                     {[
-                                        { label: 'Role', value: 'Web & App Developer' },
-                                        { label: 'Education', value: 'B.Tech IT — 3rd Year' },
+                                        { label: 'Agency', value: 'INFOZ Web & Growth' },
+                                        { label: 'Specialty', value: 'Local Business Solutions' },
                                         { label: 'Location', value: 'Tamil Nadu, India' },
-                                        { label: 'Focus', value: 'Clean Design & Scalable Code' },
-                                        { label: 'Status', value: 'Open to Freelance / Collab', highlight: true },
+                                        { label: 'Support', value: '24/7 Dedicated Care' },
+                                        { label: 'Availability', value: 'Enrolling New Clients', highlight: true },
                                     ].map(row => (
                                         <div
                                             key={row.label}

@@ -5,23 +5,23 @@ import { NavLink } from 'react-router-dom'
 
 const testimonials = [
     {
-        id: 1, initials: 'AK', name: 'Arjun Kumar', role: 'Product Manager · TechStartup Co.',
-        text: 'Dishyanth delivered our e-commerce platform ahead of schedule. His attention to detail, clean code, and proactive communication made the entire process seamless. Highly recommended.',
+        id: 1, initials: 'SJ', name: 'Sarah Jenkins', role: 'Owner · The Daily Bread Bakery',
+        text: 'Switching to an online ordering system was the best decision for my bakery. Dishyanth made the process so easy and our sales have never been better. The monthly support gives me peace of mind.',
         rating: 5, color: '#7B5EA7',
     },
     {
-        id: 2, initials: 'PS', name: 'Priya Sharma', role: 'Founder · CaféBrew',
-        text: 'The POS system he built is outstanding — intuitive, fast, and rock-solid. The AI pricing feature alone saved us thousands. He truly understood our needs and delivered beyond expectations.',
+        id: 2, initials: 'MC', name: 'Dr. Michael Chen', role: 'Lead Dentist · Bright Smiles Clinic',
+        text: "The appointment portal has revolutionized how we handle bookings. Our staff is much less stressed, and patients love the WhatsApp reminders. It's a game-changer for any local clinic.",
         rating: 5, color: '#d97706',
     },
     {
-        id: 3, initials: 'RV', name: 'Rahul Venkat', role: 'Student Council Lead · State College',
-        text: 'Our election system was a critical project. Dishyanth handled it with absolute professionalism and security expertise. Zero issues on election day — flawless execution.',
+        id: 3, initials: 'JR', name: 'James Rodriguez', role: 'Manager · Iron Forge Gym',
+        text: 'We used to struggle with membership tracking and late payments. The new dashboard and automated billing have completely solved those issues. Professional, fast, and highly effective.',
         rating: 5, color: '#059669',
     },
     {
-        id: 4, initials: 'MR', name: 'Meena R.', role: 'Operations Head · LogiTech Solutions',
-        text: 'Tight deadline, clean delivery, great documentation, and stellar post-launch support. A true professional who stands behind his work.',
+        id: 4, initials: 'ER', name: 'Elena Rossi', role: 'Founder · Rossi Real Estate',
+        text: "Our property inquiries have more than doubled since the new site went live. The design is premium and the lead alerts are instant. I couldn't be happier with the results.",
         rating: 5, color: '#db2777',
     },
 ]

@@ -33,7 +33,7 @@ export default function CTA() {
                         lineHeight: 1.2,
                         marginBottom: '16px'
                     }}>
-                        Have a project <span style={{ color: 'var(--accent)' }}>in mind?</span>
+                        Build a website that <span style={{ color: 'var(--accent)' }}>gets you customers.</span>
                     </h2>
 
                     {/* Subtitle */}
@@ -45,7 +45,7 @@ export default function CTA() {
                         maxWidth: '400px',
                         margin: '0 auto 48px'
                     }}>
-                        Let's discuss how we can bring your technical vision to life.
+                        Get a professional website and ongoing monthly support tailored for your local business.
                     </p>
 
                     {/* Pill button – matching mockup proportions */}
@@ -74,7 +74,7 @@ export default function CTA() {
                             e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,255,157,0.2)'
                         }}
                     >
-                        Start a Project
+                        Get Free Website Audit
                     </NavLink>
                 </motion.div>
             </div>

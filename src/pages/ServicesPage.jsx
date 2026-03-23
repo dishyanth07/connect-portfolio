@@ -21,10 +21,10 @@ export default function ServicesPage() {
                             <span className="label-text">What We Do</span>
                         </div>
                         <h1 className="display-xl" style={{ color: '#fff', marginBottom: '1.25rem' }}>
-                            Our <span className="gradient-text">Services.</span>
+                            Business <span className="gradient-text">Solutions.</span>
                         </h1>
                         <p style={{ color: '#71717a', fontSize: '1.125rem', lineHeight: '1.75', maxWidth: '560px', fontWeight: 400 }}>
-                            INFOZ combines strategy, engineering, and design to build powerful digital products and scalable systems.
+                            We provide the strategic design and technical support local businesses need to grow and thrive in the digital age.
                         </p>
                     </motion.div>
                 </div>

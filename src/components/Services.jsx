@@ -9,66 +9,24 @@ import {
 const services = [
     {
         num: '01',
-        title: 'Web Development',
-        desc: 'Fast, scalable, and modern web applications using React, Next.js, and Node.js.',
+        title: 'Custom Business Website',
+        desc: 'Get a professional site that turns visitors into loyal customers. Perfect for salons, clinics, and local shops.',
         icon: FiCode,
-        tags: ['React / Next.js', 'Scalable Apps', 'Modern Design', 'High Performance']
+        tags: ['Mobile-optimized design', 'SEO-ready for Google', 'Blazing fast performance']
     },
     {
         num: '02',
-        title: 'Full Stack Development',
-        desc: 'Complete frontend, backend, database, and cloud-deployed systems.',
-        icon: FiLayers,
-        tags: ['Frontend & Backend', 'Database Design', 'Cloud Deployment', 'Unified Systems']
+        title: 'E-commerce & Appointments',
+        desc: 'Sell products or book appointments directly online with ease. Secure, reliable, and easy to manage.',
+        icon: FiShoppingCart,
+        tags: ['Secure payment setup', 'Easy product management', 'Direct booking system']
     },
     {
         num: '03',
-        title: 'E-Commerce Development',
-        desc: 'Online stores and business platforms with secure payments and admin controls.',
-        icon: FiShoppingCart,
-        tags: ['Payment Integration', 'Inventory Management', 'Customer Accounts', 'Admin Analytics']
-    },
-    {
-        num: '04',
-        title: 'Mobile App Development',
-        desc: 'Android and iOS applications with clean UI and cloud integration.',
-        icon: FiSmartphone,
-        tags: ['Android & iOS', 'Clean UI', 'Cloud Integration', 'High Performance']
-    },
-    {
-        num: '05',
-        title: 'SaaS Development',
-        desc: 'Scalable SaaS platforms with authentication, dashboards, storage, and automation.',
-        icon: FiBox,
-        tags: ['Scalable Architecture', 'Authentication', 'Data Storage', 'Automation']
-    },
-    {
-        num: '06',
-        title: 'Portfolio Development',
-        desc: 'Professional digital portfolios for individuals, startups, and creators.',
-        icon: FiUser,
-        tags: ['Digital Portfolios', 'Brand Identity', 'Showcase Work', 'Professional Design']
-    },
-    {
-        num: '07',
-        title: 'IoT Projects',
-        desc: 'Real-time IoT systems with sensors, cloud connectivity, and embedded hardware.',
-        icon: FiCpu,
-        tags: ['Real-time Systems', 'Cloud Connectivity', 'Dashboards', 'Embedded Hardware']
-    },
-    {
-        num: '08',
-        title: 'Final Year Projects',
-        desc: 'End-to-end project development for engineering students with modern tools.',
-        icon: FiBookOpen,
-        tags: ['Complete Documentation', 'Viva Support', 'Source Code', 'Working Models']
-    },
-    {
-        num: '09',
-        title: 'Hackathons',
-        desc: 'Hackathon solutions with fast, powerful prototypes designed for competitive success.',
+        title: 'Monthly Care & Support',
+        desc: 'Focus on your business while we handle the technical stuff. Peace of mind guaranteed.',
         icon: FiZap,
-        tags: ['Quick Prototypes', 'Powerful Solutions', 'Competition Ready', 'Idea Execution']
+        tags: ['Daily backups & security', 'Unlimited small edits', '24/7 technical support']
     }
 ]
 
@@ -92,7 +50,7 @@ export default function Services({ limit, hideHeader }) {
                         className="text-center mb-24"
                     >
                         <h2 className="display-lg text-white mb-6 uppercase tracking-tight">
-                            What <span className="text-[var(--accent)]">We Offer</span>
+                            Complete <span className="text-[var(--accent)]">Solutions</span>
                         </h2>
 
                         {/* Mockup Underline Effect */}
@@ -101,7 +59,7 @@ export default function Services({ limit, hideHeader }) {
                         </div>
 
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-70">
-                            Comprehensive services designed to meet your unique needs and exceed expectations
+                            Everything your local business needs to thrive online, from initial launch to ongoing support.
                         </p>
                     </motion.div>
                 )}

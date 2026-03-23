@@ -3,12 +3,12 @@ import { motion, useScroll, useSpring } from 'framer-motion'
 import { FiMessageSquare, FiCommand, FiCode, FiShield, FiSend, FiRefreshCw, FiSearch, FiLayers, FiCheckCircle } from 'react-icons/fi'
 
 const steps = [
-    { num: '01', icon: FiSearch, title: 'Consultation', desc: 'Understand project goals and requirements through deep strategic analysis.' },
-    { num: '02', icon: FiLayers, title: 'Planning', desc: 'Define architecture, timeline and technologies to ensure a solid foundation.' },
-    { num: '03', icon: FiCode, title: 'Development', desc: 'Agile development with continuous updates and modular engineering.' },
-    { num: '04', icon: FiCheckCircle, title: 'Testing', desc: 'Quality assurance and performance testing to guarantee zero-defect delivery.' },
-    { num: '05', icon: FiSend, title: 'Deployment', desc: 'Smooth launch and delivery with scalable cloud infrastructure.' },
-    { num: '06', icon: FiShield, title: 'Support', desc: 'Ongoing maintenance and proactive improvements to keep your product ahead.' },
+    { num: '01', icon: FiSearch, title: 'Strategy & Audit', desc: 'We start with a free audit to understand your business goals and identify growth opportunities.' },
+    { num: '02', icon: FiLayers, title: 'Success Roadmap', desc: 'Defining the perfect architecture and plan to ensure your project delivers real-world results.' },
+    { num: '03', icon: FiCode, title: 'Rapid Building', desc: 'High-speed development with modern tools to get your business online as quickly as possible.' },
+    { num: '04', icon: FiCheckCircle, title: 'Performance Check', desc: 'Rigorous testing to ensure your site is fast, secure, and ready for your first visitors.' },
+    { num: '05', icon: FiSend, title: 'Go-Live!', desc: 'A smooth launch with everything set up for search engines and lead generation.' },
+    { num: '06', icon: FiShield, title: 'Ongoing Care', desc: 'Continuous monthly support and updates to keep your business ahead of the competition.' },
 ]
 
 export default function Process() {

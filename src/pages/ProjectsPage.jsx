@@ -10,10 +10,10 @@ export default function ProjectsPage() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
                         <span className="section-num">03</span>
                         <span style={{ width: '40px', height: '1px', background: '#333' }} />
-                        <span className="label-text">Portfolio</span>
+                        <span className="label-text">Results</span>
                     </div>
                     <h1 className="display-xl" style={{ color: '#fff', marginBottom: '3rem' }}>
-                        Selected <span className="gradient-text">Projects.</span>
+                        Success <span className="gradient-text">Stories.</span>
                     </h1>
                 </div>
                 <Projects />

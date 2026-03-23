@@ -41,8 +41,8 @@ export default function Contact() {
                         <span className="label-text">Contact</span>
                     </div>
                     <h2 className="display-lg" style={{ color: '#fff', maxWidth: '700px' }}>
-                        Let's build something{' '}
-                        <span className="gradient-text">great together.</span>
+                        Ready to Grow your{' '}
+                        <span className="gradient-text">Business Online?</span>
                     </h2>
                 </motion.div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
                         <p style={{ color: '#666', lineHeight: 1.85, fontSize: '0.95rem', marginBottom: '2.5rem', maxWidth: '380px' }}>
-                            Have a project in mind? I'm currently open to freelance work, collaborations, and full-time opportunities. Let's make it happen.
+                            Stop losing potential customers to your competitors. Get a Free Website Audit and let's discuss how we can help your business thrive.
                         </p>
 
                         {/* Contact info */}
@@ -174,7 +174,7 @@ export default function Contact() {
                                                 <span style={{ width: '14px', height: '14px', border: '2px solid #00000033', borderTopColor: '#000', borderRadius: '50%', animation: 'spin-slow 0.8s linear infinite', display: 'inline-block' }} />
                                                 Sending...
                                             </span>
-                                        ) : 'Send Message →'}
+                                        ) : 'Book My Free Audit →'}
                                     </button>
                                     <button
                                         type="button"

@@ -12,45 +12,45 @@ const projects = [
     {
         id: 1,
         num: '01',
-        title: 'Modern E-commerce Platform',
-        tags: ['React', 'Node.js', 'MongoDB'],
+        title: 'Local Bakery Ordering System',
+        tags: ['E-commerce', 'Payments', 'Automation'],
         year: '2024',
         type: 'Web App',
-        desc: 'High-performance e-commerce solution built for TechStartup Co. featuring seamless registration, complex cart logic, and ultra-fast product filtering.',
-        highlights: ['Scalable architecture', 'Dynamic filtering', 'Secure checkout'],
+        desc: 'Problem: Losing customers due to phone-only orders. Solution: Custom online store with automated receipts. Result: 40% increase in weekly sales.',
+        highlights: ['Online Payments', 'Auto-Receipts', 'Mobile First'],
         color: '#7B5EA7',
     },
     {
         id: 2,
         num: '02',
-        title: 'Coffee Shop POS System',
-        tags: ['React', 'FastAPI', 'Python'],
+        title: 'Dental Clinic Booking Portal',
+        tags: ['Booking System', 'WhatsApp', 'FastAPI'],
         year: '2024',
         type: 'Business System',
-        desc: 'Comprehensive management system for CaféBrew. Features an AI-driven crisis pricing engine, inventory tracking, and integrated WhatsApp billing.',
-        highlights: ['AI pricing engine', 'Inventory tracking', 'WhatsApp billing'],
+        desc: 'Problem: Staff overwhelmed by manual bookings. Solution: 24/7 automated booking system with WhatsApp reminders. Result: Saved 15 hours/week of admin work.',
+        highlights: ['WhatsApp Integration', 'Auto-Reminders', 'Staff Dashboard'],
         color: '#d97706',
     },
     {
         id: 3,
         num: '03',
-        title: 'College Election System',
-        tags: ['React', 'Django', 'PostgreSQL'],
+        title: 'Fitness Gym Member App',
+        tags: ['React', 'Dashboard', 'Billing'],
         year: '2025',
-        type: 'Security App',
-        desc: 'Secure digital voting platform for State College. Implements biometric verification, real-time results streaming, and unbreakable audit trails.',
-        highlights: ['Biometric auth', 'Live results', 'Audit trails'],
+        type: 'Dashboard',
+        desc: 'Problem: High rate of missed membership payments. Solution: Digital member portal with automated recurring billing. Result: 60% reduction in payment delays.',
+        highlights: ['Auto-Billing', 'Member Growth', 'Member Stats'],
         color: '#059669',
     },
     {
         id: 4,
         num: '04',
-        title: 'Logistics Tracking App',
-        tags: ['Next.js', 'Firebase', 'Realtime'],
+        title: 'Real Estate Lead Capture',
+        tags: ['Next.js', 'SEO', 'Lead Gen'],
         year: '2025',
-        type: 'Enterprise App',
-        desc: 'End-to-end supply chain solution for LogiTech Solutions. Real-time fleet tracking, automated documentation, and stellar post-launch support.',
-        highlights: ['Real-time tracking', 'Cloud storage', 'Enterprise security'],
+        type: 'Marketing Site',
+        desc: 'Problem: Boutique agency struggling to get property inquiries. Solution: High-performance portfolio with instant lead alerts. Result: 2.5x more qualified buyer inquiries.',
+        highlights: ['Lead Alerts', 'Virtual Tours', 'High SEO'],
         color: '#db2777',
     },
 ]
@@ -72,7 +72,7 @@ export default function Projects({ limit }) {
                             <span className="label-text">Projects</span>
                         </div>
                         <h2 className="display-md" style={{ color: '#fff', lineHeight: 1.1 }}>
-                            Selected <span className="gradient-text">Work</span>
+                            Recent <span className="gradient-text">Success Stories</span>
                         </h2>
                     </div>
                     {limit ? (
