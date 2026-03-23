@@ -78,7 +78,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-4xl mx-auto text-center"
+                    className="max-w-4xl mx-auto flex flex-col items-center text-center"
                 >
                     <div className="flex items-center justify-center gap-3 mb-8">
                         <span className="pill pill-green">
@@ -87,24 +87,23 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <h1 className="display-xl mb-4 text-center">
-                        <span className="gradient-text-white">We Build Websites That</span>
-                        <br />
-                        <span className="text-zinc-500 text-center">Get You More Customers.</span>
+                    <h1 className="display-xl mb-6 mx-auto">
+                        <span className="gradient-text-white block">We Build Websites That</span>
+                        <span className="text-zinc-500 block">Get You More Customers.</span>
                     </h1>
 
-                    <p className="text-base md:text-lg text-zinc-400 mb-6 max-w-2xl leading-relaxed opacity-90 text-center mx-auto">
+                    <p className="text-base md:text-lg text-zinc-400 mb-8 max-w-2xl leading-relaxed opacity-90 mx-auto">
                         Professional Web Development + Ongoing Support tailored for small businesses like yours.
                     </p>
 
-                    <div className="min-h-[2.5rem] md:min-h-[3rem] flex items-center justify-center mb-10">
+                    <div className="min-h-[2.5rem] md:min-h-[3rem] flex items-center justify-center mb-10 w-full">
                         <span className="font-syne font-bold text-lg md:text-2xl text-zinc-500">
                             {displayText}
                             <span className="ml-1 animate-pulse inline-block w-[2px] h-6 bg-purple-500 align-middle" />
                         </span>
                     </div>
 
-                    <div className="flex flex-wrap items-center justify-center gap-6">
+                    <div className="flex flex-wrap items-center justify-center gap-6 w-full">
                         <NavLink
                             to="/contact"
                             className="bg-[var(--accent)] text-black font-syne font-bold px-10 py-5 rounded-full text-base transition-all hover:scale-105 active:scale-95 no-underline shadow-xl shadow-[var(--accent)]/10"
