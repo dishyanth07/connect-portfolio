@@ -33,9 +33,9 @@ export default function Contact() {
                 <motion.div
                     initial={{ opacity: 0, y: 28 }} animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
-                    style={{ marginBottom: '5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}
+                    style={{ marginBottom: '5rem' }}
                 >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '1.5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
                         <span className="section-num">06</span>
                         <span style={{ width: '40px', height: '1px', background: '#333' }} />
                         <span className="label-text">Contact</span>

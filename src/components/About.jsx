@@ -17,7 +17,7 @@ export default function About({ simple, hideHeader }) {
                 {/* Label */}
                 {!hideHeader && (
                     <motion.div variants={fade(0)} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '3.5rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '3.5rem' }}>
                             <span className="section-num">01</span>
                             <span style={{ width: '40px', height: '1px', background: '#333' }} />
                             <span className="label-text">About Agency</span>
@@ -27,14 +27,14 @@ export default function About({ simple, hideHeader }) {
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '4rem' }}>
                     {/* Big intro text */}
-                    <motion.div variants={fade(0.1)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '2.5rem' }}>
-                        <h2 className="display-lg" style={{ color: '#fff', maxWidth: '850px', lineHeight: 1.05, margin: '0 auto' }}>
+                    <motion.div variants={fade(0.1)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '2rem' }}>
+                        <h2 className="display-lg" style={{ color: '#fff', maxWidth: '800px', lineHeight: 1.05 }}>
                             Your partner in{' '}
                             <span className="text-[var(--accent)]">business growth</span>{' '}
                             through digital excellence.
                         </h2>
                         {simple && (
-                            <NavLink to="/about" className="btn btn-outline no-underline px-8 py-3">
+                            <NavLink to="/about" className="btn btn-outline no-underline mb-2">
                                 Discover Full Story ↗
                             </NavLink>
                         )}
@@ -45,11 +45,11 @@ export default function About({ simple, hideHeader }) {
                             {/* Two-column details */}
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                                 {/* Bio */}
-                                <motion.div variants={fade(0.2)} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="text-center">
-                                    <p style={{ color: '#777', lineHeight: 1.9, fontSize: '0.95rem', marginBottom: '1.5rem', maxWidth: '600px', margin: '0 auto 1.5rem' }}>
+                                <motion.div variants={fade(0.2)} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
+                                    <p style={{ color: '#777', lineHeight: 1.9, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
                                         We are <span style={{ color: '#fff', fontWeight: 600 }}>INFOZ Agency</span>, a dedicated team of web developers and growth strategists. We specialize in helping local businesses establish a powerful online presence that drives real-world results.
                                     </p>
-                                    <p style={{ color: '#555', lineHeight: 1.9, fontSize: '0.9rem', maxWidth: '600px', margin: '0 auto' }}>
+                                    <p style={{ color: '#555', lineHeight: 1.9, fontSize: '0.9rem' }}>
                                         Our mission is simple: To provide high-quality, conversion-focused web solutions and reliable monthly support, so you can focus on what you do best—running your business.
                                     </p>
                                 </motion.div>

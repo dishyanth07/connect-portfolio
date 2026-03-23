@@ -64,9 +64,9 @@ export default function Projects({ limit }) {
         <section id="projects" ref={ref} style={{ background: '#000', padding: '9rem 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
             <div className="container-main">
                 {/* Header */}
-                <motion.div variants={fade(0)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: '5rem', gap: '2rem' }}>
+                <motion.div variants={fade(0)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '3.5rem', flexWrap: 'wrap', gap: '1.5rem' }}>
                     <div className="max-w-[600px]">
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '1.25rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.25rem' }}>
                             <span className="section-num">03</span>
                             <span style={{ width: '32px', height: '1px', background: '#222' }} />
                             <span className="label-text">Projects</span>
@@ -76,11 +76,11 @@ export default function Projects({ limit }) {
                         </h2>
                     </div>
                     {limit ? (
-                        <NavLink to="/projects" className="btn btn-outline no-underline px-8 py-3" style={{ fontSize: '0.85rem' }}>
+                        <NavLink to="/projects" className="btn btn-outline no-underline px-5 py-2.5 mb-1" style={{ alignSelf: 'flex-end', fontSize: '0.8rem' }}>
                             Explore All Portfolio ↗
                         </NavLink>
                     ) : (
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline px-8 py-3" style={{ fontSize: '0.85rem' }}>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline px-5 py-2.5 mb-1" style={{ alignSelf: 'flex-end', fontSize: '0.8rem' }}>
                             GitHub Repository ↗
                         </a>
                     )}
@@ -113,8 +113,8 @@ export default function Projects({ limit }) {
                             </div>
 
                             {/* Main content */}
-                            <div className="text-center flex flex-col items-center">
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '0.6rem', flexWrap: 'wrap' }}>
+                            <div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '0.6rem', flexWrap: 'wrap' }}>
                                     <h3 style={{
                                         fontFamily: 'Syne, sans-serif', fontWeight: 700,
                                         fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
@@ -131,11 +131,11 @@ export default function Projects({ limit }) {
                                         {p.type}
                                     </span>
                                 </div>
-                                <p style={{ color: '#555', fontSize: '0.875rem', lineHeight: 1.7, maxWidth: '560px', marginBottom: '1rem', margin: '0 auto 1.5rem' }}>
+                                <p style={{ color: '#555', fontSize: '0.875rem', lineHeight: 1.7, maxWidth: '560px', marginBottom: '1rem' }}>
                                     {p.desc}
                                 </p>
                                 {/* Tags */}
-                                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '6px' }}>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                                     {p.tags.map(t => (
                                         <span key={t} className="pill" style={{ fontSize: '0.7rem' }}>{t}</span>
                                     ))}
@@ -143,10 +143,10 @@ export default function Projects({ limit }) {
                             </div>
 
                             {/* Year + links */}
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', paddingTop: '4px' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '10px', paddingTop: '4px' }}>
                                 <span style={{ color: '#444', fontSize: '0.78rem', fontWeight: 600 }}>{p.year}</span>
                                 <div style={{ display: 'flex', gap: '8px' }}>
-                                    <button className="btn-arrow" style={{ width: '40px', height: '40px', fontSize: '0.9rem' }}>
+                                    <button className="btn-arrow" style={{ width: '36px', height: '36px', fontSize: '0.85rem' }}>
                                         ↗
                                     </button>
                                 </div>
