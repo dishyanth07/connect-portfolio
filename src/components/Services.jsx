@@ -39,7 +39,7 @@ export default function Services({ limit, hideHeader }) {
     const displayedServices = limit ? services.slice(0, limit) : services
 
     return (
-        <section id="services" ref={ref} className="bg-transparent">
+        <section id="services" ref={ref} className="bg-transparent py-32">
             <div className="container-main">
                 {!hideHeader && (
                     <motion.div
@@ -58,7 +58,7 @@ export default function Services({ limit, hideHeader }) {
                             <div className="w-24 h-1 bg-[var(--accent)] rounded-full blur-[2px]" />
                         </div>
 
-                        <p className="text-zinc-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-70">
+                        <p className="text-zinc-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
                             Everything your local business needs to thrive online, from initial launch to ongoing support.
                         </p>
                     </motion.div>
@@ -74,29 +74,29 @@ export default function Services({ limit, hideHeader }) {
                             transition={{ duration: 0.8, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
                             className="group"
                         >
-                            <div className="bg-[#0a0a0a] border border-white/[0.05] p-12 h-full rounded-[40px] flex flex-col items-center text-center transition-all duration-700 group-hover:bg-[#0e0e0e] group-hover:border-[var(--accent)]/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
+                            <div className="bg-[#0a0a0a] border border-white/[0.05] p-10 h-full rounded-[32px] flex flex-col items-center text-center transition-all duration-700 group-hover:bg-[#0e0e0e] group-hover:border-[var(--accent)]/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
 
                                 {/* Corner Number */}
-                                <div className="absolute top-8 right-8 text-[10px] font-black text-zinc-800 bg-white/[0.02] px-3 py-1 rounded-full border border-white/[0.05] tracking-widest group-hover:text-[var(--accent)] group-hover:border-[var(--accent-muted)] transition-all">
+                                <div className="absolute top-6 right-6 text-[11px] font-black text-zinc-800 bg-white/[0.02] px-3 py-1 rounded-full border border-white/[0.05] tracking-widest group-hover:text-[var(--accent)] group-hover:border-[var(--accent-muted)] transition-all">
                                     {svc.num}
                                 </div>
 
                                 {/* Dynamic Icon Section */}
-                                <div className="w-28 h-28 mb-10 rounded-3xl bg-white/[0.02] border border-white/[0.04] flex items-center justify-center text-white/90 group-hover:text-[var(--accent)] group-hover:border-[var(--accent-glow)] group-hover:bg-[var(--accent-muted)] transition-all duration-700">
-                                    <svc.icon size={42} strokeWidth={1} />
+                                <div className="w-20 h-20 mb-8 rounded-2xl bg-white/[0.02] border border-white/[0.04] flex items-center justify-center text-white/90 group-hover:text-[var(--accent)] group-hover:border-[var(--accent-glow)] group-hover:bg-[var(--accent-muted)] transition-all duration-700">
+                                    <svc.icon size={32} strokeWidth={1} />
                                 </div>
 
                                 <h3 className="font-syne font-black text-2xl text-white mb-6 tracking-tight uppercase">
                                     {svc.title}
                                 </h3>
 
-                                <p className="text-zinc-500 text-[1.05rem] leading-relaxed mb-10 font-medium opacity-80 max-w-[280px]">
+                                <p className="text-zinc-500 text-[1rem] leading-relaxed mb-10 font-medium opacity-80 max-w-[320px]">
                                     {svc.desc}
                                 </p>
 
                                 <div className="mt-auto flex flex-wrap justify-center gap-2">
                                     {svc.tags.map(tag => (
-                                        <span key={tag} className="text-[9px] font-bold uppercase tracking-[0.15em] text-zinc-600 bg-white/[0.01] border border-white/[0.05] px-4 py-2 rounded-full group-hover:text-zinc-400 group-hover:border-zinc-700 transition-all">
+                                        <span key={tag} className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-600 bg-white/[0.01] border border-white/[0.05] px-4 py-2 rounded-full group-hover:text-zinc-400 group-hover:border-zinc-700 transition-all">
                                             {tag}
                                         </span>
                                     ))}

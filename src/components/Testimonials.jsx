@@ -34,7 +34,7 @@ export default function Testimonials({ limit, hideHeader }) {
     const t = displayedTestimonials[cur] || displayedTestimonials[0]
 
     return (
-        <section id="testimonials" ref={ref} style={{ background: '#000', padding: hideHeader ? '0 0 7rem 0' : '7rem 0', borderTop: hideHeader ? 'none' : '1px solid rgba(255,255,255,0.06)' }}>
+        <section id="testimonials" ref={ref} style={{ background: '#000', padding: hideHeader ? '0 0 8rem 0' : '8rem 0', borderTop: hideHeader ? 'none' : '1px solid rgba(255,255,255,0.06)' }}>
             <div className="container-main">
                 {/* Header */}
                 {!hideHeader && (
@@ -140,8 +140,8 @@ export default function Testimonials({ limit, hideHeader }) {
                                     {item.initials}
                                 </div>
                                 <div>
-                                    <div style={{ color: i === cur ? '#fff' : '#888', fontWeight: 600, fontSize: '0.82rem', lineHeight: 1.2 }}>{item.name}</div>
-                                    <div style={{ color: '#444', fontSize: '0.72rem', marginTop: '2px' }}>{item.role.split(' · ')[1]}</div>
+                                    <div style={{ color: i === cur ? '#fff' : '#666', fontWeight: 600, fontSize: '0.82rem', lineHeight: 1.2 }}>{item.name}</div>
+                                    <div style={{ color: '#444', fontSize: '0.72rem', marginTop: '3px' }}>{item.role.split(' · ')[1]}</div>
                                 </div>
                             </button>
                         ))}

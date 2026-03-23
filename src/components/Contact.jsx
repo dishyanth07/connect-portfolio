@@ -27,7 +27,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" ref={ref} style={{ background: '#000', padding: '7rem 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <section id="contact" ref={ref} style={{ background: '#000', padding: '8rem 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
             <div className="container-main">
                 {/* Header */}
                 <motion.div

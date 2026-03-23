@@ -61,7 +61,7 @@ export default function Projects({ limit }) {
     const displayedProjects = limit ? projects.slice(0, limit) : projects
 
     return (
-        <section id="projects" ref={ref} style={{ background: '#000', padding: '7rem 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <section id="projects" ref={ref} style={{ background: '#000', padding: '8rem 0', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
             <div className="container-main">
                 {/* Header */}
                 <motion.div variants={fade(0)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '3.5rem', flexWrap: 'wrap', gap: '1.5rem' }}>
@@ -98,7 +98,7 @@ export default function Projects({ limit }) {
                             onMouseLeave={() => setHovered(null)}
                             style={{
                                 display: 'grid',
-                                gridTemplateColumns: '80px 1fr auto',
+                                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                                 gap: '1.5rem',
                                 alignItems: 'start',
                                 borderBottom: '1px solid rgba(255,255,255,0.05)',

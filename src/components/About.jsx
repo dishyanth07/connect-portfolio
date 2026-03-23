@@ -11,7 +11,7 @@ export default function About({ simple, hideHeader }) {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.12 })
 
     return (
-        <section id="about" ref={ref} className="relative overflow-hidden" style={{ background: '#000', padding: hideHeader ? '0 0 7rem 0' : '7rem 0' }}>
+        <section id="about" ref={ref} className="relative overflow-hidden" style={{ background: '#000', padding: hideHeader ? '0 0 8rem 0' : '8rem 0' }}>
             {/* Background Graphic */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 blur-[120px] rounded-full -mr-64 -mt-32 pointer-events-none" />
 
@@ -19,10 +19,10 @@ export default function About({ simple, hideHeader }) {
                 {/* Label */}
                 {!hideHeader && (
                     <motion.div variants={fade(0)} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '4rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '3.5rem' }}>
                             <span className="section-num">01</span>
                             <span style={{ width: '40px', height: '1px', background: '#333' }} />
-                            <span className="label-text">About</span>
+                            <span className="label-text">About Agency</span>
                         </div>
                     </motion.div>
                 )}
