@@ -56,7 +56,7 @@ export default function Hero() {
                 }} />
             </div>
 
-            <div className="container-main relative z-40 pt-32 pb-48 md:pb-32">
+            <div className="container-main relative z-40 pt-40 pb-56 md:pb-40">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -70,20 +70,20 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <h1 className="display-xl mb-6">
+                    <h1 className="display-xl mb-4">
                         <span className="gradient-text-white">We Build Websites That</span>
                         <br />
                         <span className="text-zinc-500">Get You More Customers.</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl text-zinc-400 mb-8 max-w-2xl leading-relaxed">
+                    <p className="text-base md:text-lg text-zinc-400 mb-6 max-w-2xl leading-relaxed opacity-90">
                         Professional Web Development + Ongoing Support tailored for small businesses like yours.
                     </p>
 
-                    <div className="min-h-[3rem] md:min-h-[4.5rem] flex items-center mb-10">
-                        <span className="font-syne font-bold text-xl md:text-3xl text-zinc-400">
+                    <div className="min-h-[2.5rem] md:min-h-[3rem] flex items-center mb-10">
+                        <span className="font-syne font-bold text-lg md:text-2xl text-zinc-500">
                             {displayText}
-                            <span className="ml-1 animate-pulse inline-block w-[3px] h-8 bg-purple-500 align-middle" />
+                            <span className="ml-1 animate-pulse inline-block w-[2px] h-6 bg-purple-500 align-middle" />
                         </span>
                     </div>
 

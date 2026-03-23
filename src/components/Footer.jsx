@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="container-main">
 
                 {/* 4-column grid exactly matching mockup */}
-                <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1.5fr 1fr', gap: '40px', marginBottom: '64px' }}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
                     {/* Col 1: Brand */}
                     <div>
@@ -29,7 +29,7 @@ export default function Footer() {
                                 style={{ width: '36px', height: '36px', objectFit: 'contain' }}
                             />
                             <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '20px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                                INFOZ
+                                INFOZ Agency
                             </span>
                         </NavLink>
                         <p style={{ color: '#71717a', fontSize: '14px', lineHeight: '1.7', maxWidth: '220px', fontWeight: 400 }}>
@@ -97,7 +97,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom bar: copyright left, social icons right */}
-                <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
                     <p style={{ color: '#3f3f46', fontSize: '13px', fontWeight: 400 }}>
                         © {currentYear} INFOZ. All rights reserved.
                     </p>
