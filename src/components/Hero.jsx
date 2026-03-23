@@ -78,9 +78,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-4xl"
+                    className="max-w-4xl mx-auto text-center"
                 >
-                    <div className="flex items-center gap-3 mb-8">
+                    <div className="flex items-center justify-center gap-3 mb-8">
                         <span className="pill pill-green">
                             <span className="status-dot" />
                             Available for new projects
