@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FiCheck } from 'react-icons/fi'
 import { NavLink } from 'react-router-dom'
+import { useModal } from '../context/ModalContext'
 
 const plans = [
     {
@@ -65,6 +66,7 @@ const addOns = [
 ]
 
 export default function Pricing() {
+    const { openAuditModal } = useModal()
     return (
         <section id="pricing" className="py-20 bg-transparent border-t border-white/[0.05]">
             <div className="container-main max-w-6xl mx-auto px-4">
@@ -121,16 +123,16 @@ export default function Pricing() {
                                     <span>Best for:</span>
                                     <span className="text-zinc-400 font-medium normal-case tracking-normal">{plan.desc}</span>
                                 </div>
-                                <NavLink
-                                    to="/contact"
-                                    className={`w-full py-2.5 rounded-full font-syne font-bold text-[12px] transition-all active:scale-95 text-center no-underline block ${
+                                <button
+                                    onClick={openAuditModal}
+                                    className={`w-full py-2.5 rounded-full font-syne font-bold text-[12px] transition-all active:scale-95 text-center no-underline block cursor-pointer transition-all hover:scale-[1.02] ${
                                         plan.highlight
-                                        ? 'bg-[var(--accent)] text-black shadow-lg shadow-[var(--accent)]/10 hover:scale-[1.02]'
-                                        : 'border border-white/10 text-white hover:bg-white/5'
+                                        ? 'bg-[var(--accent)] text-black shadow-lg shadow-[var(--accent)]/10 hover:shadow-[var(--accent)]/30 hover:glow-strong'
+                                        : 'border border-white/10 text-white hover:bg-white/5 hover:border-[var(--accent)]/30'
                                     }`}
                                 >
-                                    {plan.highlight ? 'Get Results Now' : 'Get Started'}
-                                </NavLink>
+                                    Get Free Audit 🚀
+                                </button>
                             </div>
                         </motion.div>
                     ))}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { NavLink, useLocation } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
+import { useModal } from '../context/ModalContext'
 
 const navLinks = [
     { label: 'Home', href: '/' },
@@ -61,14 +62,12 @@ export default function Navbar() {
                             {link.label}
                         </NavLink>
                     ))}
-                    <NavLink
-                        to="/contact"
-                        style={{ backgroundColor: 'var(--accent)', color: '#000', fontWeight: 700, padding: '0.625rem 1.75rem', borderRadius: '100px', fontSize: '0.875rem', textDecoration: 'none', transition: 'transform 0.2s ease' }}
-                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
-                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                    <button
+                        onClick={openAuditModal}
+                        className="bg-[var(--accent)] text-black font-syne font-bold px-7 py-2.5 rounded-full text-sm transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[var(--accent)]/20 hover:shadow-[var(--accent)]/40 hover:glow-strong cursor-pointer"
                     >
-                        Free Audit
-                    </NavLink>
+                        Get Free Audit 🚀
+                    </button>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -101,9 +100,12 @@ export default function Navbar() {
                                     {link.label}
                                 </NavLink>
                             ))}
-                            <NavLink to="/contact" className="btn btn-white py-4 text-lg mt-4 no-underline">
-                                Free Audit →
-                            </NavLink>
+                            <button 
+                                onClick={openAuditModal}
+                                className="bg-[var(--accent)] text-black font-syne font-bold py-4 rounded-full text-lg mt-4 cursor-pointer hover:scale-105 transition-transform"
+                            >
+                                Get Free Audit 🚀
+                            </button>
                         </div>
                     </motion.div>
                 )}

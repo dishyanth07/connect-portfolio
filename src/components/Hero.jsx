@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
+import { useModal } from '../context/ModalContext'
 
 const PHRASES = [
     'Get More Leads & Sales',
@@ -10,6 +11,7 @@ const PHRASES = [
 ]
 
 export default function Hero() {
+    const { openAuditModal } = useModal()
     const [index, setIndex] = useState(0)
     const [displayText, setDisplayText] = useState('')
     const [isDeleting, setIsDeleting] = useState(false)
@@ -104,12 +106,12 @@ export default function Hero() {
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-6 w-full">
-                        <NavLink
-                            to="/contact"
-                            className="bg-[var(--accent)] text-black font-syne font-bold px-10 py-5 rounded-full text-base transition-all hover:scale-105 active:scale-95 no-underline shadow-xl shadow-[var(--accent)]/10"
+                        <button
+                            onClick={openAuditModal}
+                            className="bg-[var(--accent)] text-black font-syne font-bold px-10 py-5 rounded-full text-base transition-all hover:scale-105 active:scale-95 shadow-xl shadow-[var(--accent)]/10 hover:shadow-[var(--accent)]/40 hover:glow-strong cursor-pointer"
                         >
-                            Get Free Website Audit
-                        </NavLink>
+                            Get Free Audit 🚀
+                        </button>
                         <a
                             href="https://wa.me/919092330688"
                             target="_blank"

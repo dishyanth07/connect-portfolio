@@ -8,23 +8,29 @@ import ServicesPage from './pages/ServicesPage'
 import ProjectsPage from './pages/ProjectsPage'
 import ContactPage from './pages/ContactPage'
 
+import { ModalProvider } from './context/ModalContext'
+import AuditModal from './components/AuditModal'
+
 function App() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen bg-[#000] text-white">
-      <Navbar />
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </AnimatePresence>
-      <Footer />
-    </div>
+    <ModalProvider>
+      <div className="min-h-screen bg-[#000] text-white">
+        <Navbar />
+        <AuditModal />
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
+      </div>
+    </ModalProvider>
   )
 }
 
