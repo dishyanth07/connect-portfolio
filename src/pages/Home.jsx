@@ -4,7 +4,6 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
 import TrustIndicators from '../components/TrustIndicators'
-import Pricing from '../components/Pricing'
 import Projects from '../components/Projects'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
@@ -17,7 +16,6 @@ export default function Home() {
                 <About simple={true} />
                 <Services limit={3} />
                 <TrustIndicators />
-                <Pricing />
                 <Projects limit={2} />
                 <Testimonials limit={2} />
                 <Contact />

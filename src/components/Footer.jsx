@@ -43,10 +43,10 @@ export default function Footer() {
                             Navigation
                         </h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                            {['Home', 'About', 'Services', 'Pricing', 'Projects', 'Contact'].map(link => (
+                            {['Home', 'About', 'Services', 'Projects', 'Contact'].map(link => (
                                 <NavLink
                                     key={link}
-                                    to={link === 'Home' ? '/' : link === 'Pricing' ? '/#pricing' : `/${link.toLowerCase()}`}
+                                    to={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
                                     style={{ color: '#a1a1aa', fontSize: '14px', fontWeight: 400, textDecoration: 'none', transition: 'color 0.2s' }}
                                     onMouseEnter={e => e.target.style.color = '#fff'}
                                     onMouseLeave={e => e.target.style.color = '#a1a1aa'}
