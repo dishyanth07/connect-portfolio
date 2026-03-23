@@ -16,6 +16,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
+    const { openAuditModal } = useModal()
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20)

@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
 
-const ModalContext = createContext();
+const ModalContext = createContext({
+    isAuditModalOpen: false,
+    openAuditModal: () => {},
+    closeAuditModal: () => {}
+});
 
 export function ModalProvider({ children }) {
     const [isAuditModalOpen, setAuditModalOpen] = useState(false);
@@ -19,4 +23,10 @@ export function ModalProvider({ children }) {
     );
 }
 
-export const useModal = () => useContext(ModalContext);
+export const useModal = () => {
+    const context = useContext(ModalContext);
+    if (context === undefined) {
+        throw new Error('useModal must be used within a ModalProvider');
+    }
+    return context;
+};
