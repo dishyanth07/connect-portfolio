@@ -12,8 +12,6 @@ export default function About({ simple, hideHeader }) {
 
     return (
         <section id="about" ref={ref} className="relative overflow-hidden" style={{ background: '#000', padding: hideHeader ? '0 0 8rem 0' : '8rem 0' }}>
-            {/* Background Graphic */}
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 blur-[120px] rounded-full -mr-64 -mt-32 pointer-events-none" />
 
             <div className="container-main relative z-10">
                 {/* Label */}
@@ -32,7 +30,7 @@ export default function About({ simple, hideHeader }) {
                     <motion.div variants={fade(0.1)} initial="hidden" animate={inView ? 'visible' : 'hidden'} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '2rem' }}>
                         <h2 className="display-lg" style={{ color: '#fff', maxWidth: '800px', lineHeight: 1.05 }}>
                             Your partner in{' '}
-                            <span className="gradient-text">business growth</span>{' '}
+                            <span className="text-[var(--accent)]">business growth</span>{' '}
                             through digital excellence.
                         </h2>
                         {simple && (
@@ -106,7 +104,7 @@ export default function About({ simple, hideHeader }) {
                                 ].map(v => (
                                     <div
                                         key={v.title}
-                                        className="card hover-lift"
+                                        className="bg-[#121212] border border-white/5 rounded-[16px] transition-all hover:bg-[#161616] hover:border-white/10"
                                         style={{ padding: '1.5rem', cursor: 'default' }}
                                     >
                                         <div style={{ fontSize: '1.6rem', marginBottom: '0.75rem' }}>{v.icon}</div>

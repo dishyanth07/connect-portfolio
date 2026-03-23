@@ -36,25 +36,30 @@ export default function Hero() {
 
     return (
         <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-black">
-            {/* Background Video Graphics */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/60 z-10" />
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover scale-105 blur-[2px] opacity-40"
-                    style={{ transition: 'opacity 2s ease-in' }}
-                >
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-flowing-purple-and-blue-neon-light-31758-large.mp4" type="video/mp4" />
-                </video>
-                {/* Particle/Grid Overlay */}
-                <div className="absolute inset-0 opacity-20 pointer-events-none z-20" style={{
-                    backgroundImage: 'radial-gradient(#fff 0.5px, transparent 0.5px)',
-                    backgroundSize: '24px 24px'
-                }} />
-            </div>
+            {/* 3D Decor Elements */}
+            <motion.div
+                className="absolute top-[15%] right-[10%] w-32 md:w-64 opacity-50 pointer-events-none z-10"
+                animate={{
+                    y: [0, -20, 0],
+                    rotateZ: [0, 5, 0],
+                    rotateX: [0, 10, 0]
+                }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+                <img src="/premium_3d_sphere.png" alt="" className="w-full h-auto" />
+            </motion.div>
+
+            <motion.div
+                className="absolute bottom-[15%] left-[10%] w-32 md:w-56 opacity-30 pointer-events-none z-10"
+                animate={{
+                    y: [0, 20, 0],
+                    rotateZ: [0, -5, 0],
+                    rotateY: [0, 15, 0]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            >
+                <img src="/premium_3d_torus.png" alt="" className="w-full h-auto" />
+            </motion.div>
 
             <div className="container-main relative z-40 pt-40 pb-56 md:pb-40">
                 <motion.div
@@ -87,34 +92,42 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 items-center">
-                        <NavLink to="/contact" className="btn btn-white text-lg no-underline px-10 py-5">
-                            Get Free Website Audit <span className="ml-2">→</span>
+                    <div className="flex flex-wrap items-center justify-center gap-6">
+                        <NavLink
+                            to="/contact"
+                            className="bg-[var(--accent)] text-black font-syne font-bold px-10 py-5 rounded-full text-base transition-all hover:scale-105 active:scale-95 no-underline shadow-xl shadow-[var(--accent)]/10"
+                        >
+                            Get Free Website Audit
                         </NavLink>
-                        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="btn btn-outline text-lg no-underline px-10 py-5">
+                        <a
+                            href="https://wa.me/919092330688"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border border-white/10 hover:border-white/20 text-white font-syne font-bold px-10 py-5 rounded-full text-base transition-all hover:bg-white/5 no-underline"
+                        >
                             Chat on WhatsApp
                         </a>
                     </div>
                 </motion.div>
             </div>
 
-            {/* Hero Stats */}
-            <div className="absolute bottom-0 left-0 right-0 py-12 border-t border-white/5 bg-black/40 backdrop-blur-md z-30">
-                <div className="container-main grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="absolute bottom-0 left-0 right-0 py-8 border-t border-white/5 bg-black/40 backdrop-blur-md z-30">
+                <div className="container-main flex flex-wrap justify-center md:justify-between items-center gap-8 px-4">
                     {[
-                        { label: 'Successful Projects', val: '24+' },
-                        { label: 'Happy Clients', val: '18+' },
-                        { label: 'Years Experience', val: '04+' },
-                        { label: 'Awards Won', val: '07' },
+                        { label: 'SUCCESSFUL PROJECTS', val: '24+' },
+                        { label: 'HAPPY CLIENTS', val: '18+' },
+                        { label: 'YEARS EXPERIENCE', val: '04+' },
+                        { label: 'AWARDS WON', val: '07' },
                     ].map((stat, i) => (
                         <motion.div
                             key={stat.label}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8 + i * 0.1 }}
+                            className="text-center md:text-left"
                         >
-                            <div className="font-syne font-bold text-2xl text-white mb-1">{stat.val}</div>
-                            <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold">{stat.label}</div>
+                            <div className="font-syne font-bold text-xl md:text-2xl text-white mb-1">{stat.val}</div>
+                            <div className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] font-bold">{stat.label}</div>
                         </motion.div>
                     ))}
                 </div>

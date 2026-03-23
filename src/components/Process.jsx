@@ -32,9 +32,8 @@ export default function Process() {
                 </motion.div>
 
                 <div className="relative max-w-4xl">
-                    {/* Glowing Vertical Line */}
-                    <div className="absolute left-[27px] top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-[var(--accent)] to-transparent opacity-20" />
-                    <div className="absolute left-[27px] top-4 bottom-4 w-[2px] bg-[var(--accent)] opacity-10 blur-sm" />
+                    {/* Subtle Vertical Line */}
+                    <div className="absolute left-[27px] top-4 bottom-4 w-px bg-white/10" />
 
                     <div className="space-y-20">
                         {steps.map((step, i) => (
@@ -48,7 +47,7 @@ export default function Process() {
                             >
                                 {/* Timeline Connector Node */}
                                 <div className="relative z-10 mt-1">
-                                    <div className="w-14 h-14 rounded-2xl bg-[#0a0a0a] border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-[var(--accent)] group-hover:bg-[var(--accent-muted)] group-hover:scale-110 shadow-2xl">
+                                    <div className="w-14 h-14 rounded-2xl bg-[#121212] border border-white/5 flex items-center justify-center transition-all duration-500 group-hover:border-[var(--accent)]/40 group-hover:bg-[#161616] group-hover:scale-105">
                                         <span className="text-xs font-black text-zinc-500 group-hover:text-[var(--accent)] transition-colors tracking-widest">{step.num}</span>
                                     </div>
                                 </div>

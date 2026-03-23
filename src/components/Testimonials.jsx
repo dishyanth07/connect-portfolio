@@ -76,11 +76,9 @@ export default function Testimonials({ limit, hideHeader }) {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -16 }}
                                 transition={{ duration: 0.35 }}
-                                className="card"
-                                style={{ padding: '2.5rem', height: '100%', position: 'relative', overflow: 'hidden' }}
+                                className="bg-[#121212] border border-white/5 rounded-[24px]"
+                                style={{ padding: '3rem', height: '100%', position: 'relative', overflow: 'hidden' }}
                             >
-                                {/* Huge quote mark */}
-                                <div style={{ position: 'absolute', top: '1rem', right: '2rem', fontFamily: 'Georgia, serif', fontSize: '8rem', color: 'rgba(255,255,255,0.04)', lineHeight: 1, userSelect: 'none' }}>"</div>
 
                                 <div style={{ display: 'flex', gap: '6px', marginBottom: '1.75rem' }}>
                                     {Array.from({ length: t.rating }).map((_, i) => (

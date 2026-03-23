@@ -4,17 +4,6 @@ import { NavLink } from 'react-router-dom'
 export default function CTA() {
     return (
         <section style={{ background: '#000', padding: '120px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-            {/* Very subtle glow */}
-            <div style={{
-                position: 'absolute', top: '50%', left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '500px', height: '200px',
-                background: 'var(--accent-muted)',
-                filter: 'blur(80px)',
-                borderRadius: '50%',
-                opacity: 0.2,
-                pointerEvents: 'none'
-            }} />
 
             <div className="container-main" style={{ position: 'relative', zIndex: 1 }}>
                 <motion.div
@@ -24,15 +13,7 @@ export default function CTA() {
                     transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
                 >
                     {/* Heading – matches mockup size and weight */}
-                    <h2 style={{
-                        fontFamily: 'Syne, sans-serif',
-                        fontWeight: 800,
-                        fontSize: 'clamp(36px, 5vw, 56px)',
-                        color: '#fff',
-                        letterSpacing: '-0.02em',
-                        lineHeight: 1.2,
-                        marginBottom: '16px'
-                    }}>
+                    <h2 className="display-lg mb-4">
                         Build a website that <span style={{ color: 'var(--accent)' }}>gets you customers.</span>
                     </h2>
 
@@ -63,15 +44,15 @@ export default function CTA() {
                             borderRadius: '999px',
                             textDecoration: 'none',
                             transition: 'transform 0.2s, box-shadow 0.2s',
-                            boxShadow: '0 16px 48px rgba(0,255,157,0.2)',
+                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                         }}
                         onMouseEnter={e => {
                             e.currentTarget.style.transform = 'scale(1.04)'
-                            e.currentTarget.style.boxShadow = '0 20px 60px rgba(0,255,157,0.3)'
+                            e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.15)'
                         }}
                         onMouseLeave={e => {
                             e.currentTarget.style.transform = 'scale(1)'
-                            e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,255,157,0.2)'
+                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)'
                         }}
                     >
                         Get Free Website Audit

@@ -13,25 +13,20 @@
 }
 
 :root {
-  --bg: #000000;
-  --surface: #0a0a0a;
-  --surface-opaque: #0a0a0a;
-  --surface2: #111111;
+  --bg: #0b0b0b;
+  --surface: #121212;
+  --surface-opaque: #121212;
+  --surface2: #1a1a1a;
   --border: rgba(255, 255, 255, 0.05);
-  --border-bright: rgba(255, 255, 255, 0.1);
+  --border-bright: rgba(255, 255, 255, 0.08);
   --text: #ffffff;
-  --text-muted: #a1a1aa;
-  --text-dim: #71717a;
-  --accent: #00ff9d;
-  /* Neon Green */
-  --accent-muted: rgba(0, 255, 157, 0.15);
-  --accent-glow: rgba(0, 255, 157, 0.3);
-  --neon: #b3ffe1;
-  --green: #00ff9d;
-  --radius-card: 20px;
-  --radius-sm: 12px;
-  --glass: rgba(255, 255, 255, 0.02);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --text-muted: #888888;
+  --text-dim: #555555;
+  --accent: #22c55e; /* Soft Green */
+  --accent-muted: rgba(34, 197, 94, 0.1);
+  --accent-glow: transparent; /* No glow */
+  --radius-card: 16px;
+  --radius-sm: 8px;
 }
 
 html {
@@ -91,26 +86,26 @@ body::before {
 
 .display-xl {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 800;
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 
 .display-lg {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.85rem, 4.5vw, 2.75rem);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .display-md {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .label-text {
@@ -158,27 +153,24 @@ body::before {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
-  transition: border-color 0.3s ease, background 0.3s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .card:hover {
-  border-color: var(--border-bright);
-  background: var(--surface2);
+  border-color: rgba(255, 255, 255, 0.1);
+  background: #161616;
 }
 
-.card-glass {
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
+.card-minimal {
+  background: transparent;
+  border: 1px solid var(--border);
   border-radius: var(--radius-card);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.2s ease;
 }
 
-.card-glass:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.card-minimal:hover {
+  border-color: var(--accent);
+  background: var(--accent-muted);
 }
 
 /* ========================
@@ -321,8 +313,24 @@ body::before {
 }
 
 /* ========================
-   ANIMATIONS
+   ANIMATIONS & 3D
    ======================== */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @keyframes fade-up {
   from {
     opacity: 0;

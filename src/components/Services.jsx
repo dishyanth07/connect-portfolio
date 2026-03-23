@@ -49,14 +49,9 @@ export default function Services({ limit, hideHeader }) {
                         transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
                         className="text-center mb-28 md:mb-36"
                     >
-                        <h2 className="display-lg text-white mb-6 uppercase tracking-tight">
+                        <h2 className="display-lg text-white mb-6 uppercase tracking-tight text-center">
                             Complete <span className="text-[var(--accent)]">Solutions</span>
                         </h2>
-
-                        {/* Mockup Underline Effect */}
-                        <div className="flex justify-center mb-8">
-                            <div className="w-24 h-1 bg-[var(--accent)] rounded-full blur-[2px]" />
-                        </div>
 
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80 text-center">
                             Everything your local business needs to thrive online, from initial launch to ongoing support.
@@ -74,16 +69,16 @@ export default function Services({ limit, hideHeader }) {
                             transition={{ duration: 0.8, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
                             className="group"
                         >
-                            <div className="bg-[#0a0a0a] border border-white/[0.05] p-10 h-full rounded-[32px] flex flex-col items-center text-center transition-all duration-700 group-hover:bg-[#0e0e0e] group-hover:border-[var(--accent)]/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
+                            <div className="bg-[#121212] border border-white/5 p-10 h-full rounded-[24px] flex flex-col items-center text-center transition-all duration-300 hover:border-white/10 hover:bg-[#161616] relative overflow-hidden group">
 
                                 {/* Corner Number */}
-                                <div className="absolute top-6 right-6 text-[11px] font-black text-zinc-800 bg-white/[0.02] px-3 py-1 rounded-full border border-white/[0.05] tracking-widest group-hover:text-[var(--accent)] group-hover:border-[var(--accent-muted)] transition-all">
+                                <div className="absolute top-6 right-6 text-[11px] font-bold text-zinc-600 bg-white/[0.03] px-3 py-1 rounded-full border border-white/5 tracking-wider">
                                     {svc.num}
                                 </div>
 
                                 {/* Dynamic Icon Section */}
-                                <div className="w-20 h-20 mb-8 rounded-2xl bg-white/[0.02] border border-white/[0.04] flex items-center justify-center text-white/90 group-hover:text-[var(--accent)] group-hover:border-[var(--accent-glow)] group-hover:bg-[var(--accent-muted)] transition-all duration-700">
-                                    <svc.icon size={32} strokeWidth={1} />
+                                <div className="w-20 h-20 mb-8 rounded-2xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/50 group-hover:text-[var(--accent)] transition-all duration-300">
+                                    <svc.icon size={32} strokeWidth={1.5} />
                                 </div>
 
                                 <h3 className="font-syne font-black text-2xl text-white mb-6 tracking-tight uppercase">

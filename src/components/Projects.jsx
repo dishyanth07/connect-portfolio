@@ -72,7 +72,7 @@ export default function Projects({ limit }) {
                             <span className="label-text">Projects</span>
                         </div>
                         <h2 className="display-md" style={{ color: '#fff', lineHeight: 1.1 }}>
-                            Recent <span className="gradient-text">Success Stories</span>
+                            Recent <span className="text-[var(--accent)]">Success Stories</span>
                         </h2>
                     </div>
                     {limit ? (
@@ -103,11 +103,8 @@ export default function Projects({ limit }) {
                                 alignItems: 'start',
                                 borderBottom: '1px solid rgba(255,255,255,0.05)',
                                 cursor: 'default',
-                                transition: 'all 0.4s cubic-bezier(0.22, 1, 0.36, 1)',
-                                borderRadius: hovered === p.id ? '20px' : '0',
-                                margin: hovered === p.id ? '0 -1.5rem' : '0 0',
-                                padding: hovered === p.id ? '2.5rem 2rem' : '2.5rem 1rem',
-                                background: hovered === p.id ? 'rgba(255,255,255,0.02)' : 'transparent',
+                                transition: 'all 0.3s ease',
+                                padding: '2.5rem 0',
                             }}
                         >
                             {/* Number */}

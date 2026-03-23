@@ -45,7 +45,6 @@ export default function Navbar() {
                     />
                     <div className="flex flex-col">
                         <span className="font-syne font-bold text-lg tracking-tight text-white leading-none">INFOZ</span>
-                        <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Web & Growth Agency</span>
                     </div>
                 </NavLink>
 
@@ -62,8 +61,13 @@ export default function Navbar() {
                             {link.label}
                         </NavLink>
                     ))}
-                    <NavLink to="/contact" className="btn btn-white no-underline ml-4 py-2 px-6 text-sm">
-                        Free Audit <span className="ml-1 opacity-50">→</span>
+                    <NavLink
+                        to="/contact"
+                        style={{ backgroundColor: 'var(--accent)', color: '#000', fontWeight: 700, padding: '0.625rem 1.75rem', borderRadius: '100px', fontSize: '0.875rem', textDecoration: 'none', transition: 'transform 0.2s ease' }}
+                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                    >
+                        Free Audit
                     </NavLink>
                 </div>
 
