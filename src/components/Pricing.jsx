@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiCheck } from 'react-icons/fi'
+import { NavLink } from 'react-router-dom'
 
 const plans = [
     {
@@ -120,15 +121,16 @@ export default function Pricing() {
                                     <span>Best for:</span>
                                     <span className="text-zinc-400 font-medium normal-case tracking-normal">{plan.desc}</span>
                                 </div>
-                                <button
-                                    className={`w-full py-2.5 rounded-full font-syne font-bold text-[12px] transition-all active:scale-95 ${
+                                <NavLink
+                                    to="/contact"
+                                    className={`w-full py-2.5 rounded-full font-syne font-bold text-[12px] transition-all active:scale-95 text-center no-underline block ${
                                         plan.highlight
                                         ? 'bg-[var(--accent)] text-black shadow-lg shadow-[var(--accent)]/10 hover:scale-[1.02]'
                                         : 'border border-white/10 text-white hover:bg-white/5'
                                     }`}
                                 >
                                     {plan.highlight ? 'Get Results Now' : 'Get Started'}
-                                </button>
+                                </NavLink>
                             </div>
                         </motion.div>
                     ))}
