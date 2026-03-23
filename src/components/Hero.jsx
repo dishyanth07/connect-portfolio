@@ -70,17 +70,17 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <h1 className="display-xl mb-4">
+                    <h1 className="display-xl mb-4 text-center">
                         <span className="gradient-text-white">We Build Websites That</span>
                         <br />
-                        <span className="text-zinc-500">Get You More Customers.</span>
+                        <span className="text-zinc-500 text-center">Get You More Customers.</span>
                     </h1>
 
-                    <p className="text-base md:text-lg text-zinc-400 mb-6 max-w-2xl leading-relaxed opacity-90">
+                    <p className="text-base md:text-lg text-zinc-400 mb-6 max-w-2xl leading-relaxed opacity-90 text-center mx-auto">
                         Professional Web Development + Ongoing Support tailored for small businesses like yours.
                     </p>
 
-                    <div className="min-h-[2.5rem] md:min-h-[3rem] flex items-center mb-10">
+                    <div className="min-h-[2.5rem] md:min-h-[3rem] flex items-center justify-center mb-10">
                         <span className="font-syne font-bold text-lg md:text-2xl text-zinc-500">
                             {displayText}
                             <span className="ml-1 animate-pulse inline-block w-[2px] h-6 bg-purple-500 align-middle" />

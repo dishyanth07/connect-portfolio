@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import Services from '../components/Services'
 import Process from '../components/Process'
+import Pricing from '../components/Pricing'
 import CTA from '../components/CTA'
 
 export default function ServicesPage() {
@@ -43,6 +44,9 @@ export default function ServicesPage() {
                 <div style={{ paddingTop: '120px', paddingBottom: '120px' }}>
                     <Process />
                 </div>
+
+                {/* Pricing Section */}
+                <Pricing />
 
                 {/* CTA */}
                 <CTA />
