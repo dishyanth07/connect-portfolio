@@ -36,29 +36,41 @@ export default function Hero() {
 
     return (
         <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-black">
-            {/* 3D Decor Elements */}
+            {/* 3D Decor Elements - Business Related */}
             <motion.div
-                className="absolute top-[15%] right-[10%] w-32 md:w-64 opacity-50 pointer-events-none z-10"
+                className="absolute top-[18%] right-[12%] w-32 md:w-64 opacity-50 pointer-events-none z-10"
                 animate={{
-                    y: [0, -20, 0],
-                    rotateZ: [0, 5, 0],
-                    rotateX: [0, 10, 0]
+                    y: [0, -30, 0],
+                    rotateY: [0, 360],
+                    rotateZ: [5, -5, 5],
+                    scale: [1, 1.05, 1]
                 }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ 
+                    duration: 10, 
+                    repeat: Infinity, 
+                    ease: "linear",
+                    y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+                }}
             >
-                <img src="/premium_3d_sphere.png" alt="" className="w-full h-auto" />
+                <img src="/web_cursor_3d.png" alt="" className="w-full h-auto drop-shadow-[0_20px_50px_rgba(34,197,94,0.1)]" />
             </motion.div>
 
             <motion.div
-                className="absolute bottom-[15%] left-[10%] w-32 md:w-56 opacity-30 pointer-events-none z-10"
+                className="absolute bottom-[20%] left-[10%] w-32 md:w-56 opacity-30 pointer-events-none z-10"
                 animate={{
-                    y: [0, 20, 0],
-                    rotateZ: [0, -5, 0],
-                    rotateY: [0, 15, 0]
+                    y: [0, 30, 0],
+                    rotateY: [0, -360],
+                    rotateX: [0, 15, 0],
+                    scale: [1, 0.95, 1]
                 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                transition={{ 
+                    duration: 12, 
+                    repeat: Infinity, 
+                    ease: "linear",
+                    y: { duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }
+                }}
             >
-                <img src="/premium_3d_torus.png" alt="" className="w-full h-auto" />
+                <img src="/growth_chart_3d.png" alt="" className="w-full h-auto drop-shadow-[0_20px_50px_rgba(34,197,94,0.1)]" />
             </motion.div>
 
             <div className="container-main relative z-40 pt-40 pb-56 md:pb-40">
