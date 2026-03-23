@@ -95,23 +95,23 @@ export default function Pricing() {
                             initial={{ opacity: 0, y: 40 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.8, delay: i * 0.1 }}
-                            className={`group relative flex flex-col p-8 md:p-10 rounded-[32px] border transition-all duration-500 ${
+                            className={`group relative flex flex-col p-10 md:p-12 rounded-[40px] border transition-all duration-700 ${
                                 plan.highlight 
-                                ? 'bg-[#0a0a0a] border-[var(--accent)]/30 scale-105 shadow-[0_20px_50px_rgba(0,255,157,0.1)]' 
+                                ? 'bg-[#0a0a0a] border-[var(--accent)]/30 lg:scale-105 shadow-[0_30px_80px_rgba(0,255,157,0.15)] z-10' 
                                 : 'bg-black/40 border-white/[0.05] hover:border-white/10'
                             }`}
                         >
                             {plan.highlight && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-[var(--accent)] text-black text-[10px] font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_var(--accent-glow)]">
-                                    Most Popular
+                                <div className="absolute -top-6 left-1/2 -translate-x-1/2 px-6 py-1.5 bg-[var(--accent)] text-black text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-[0_10px_30px_rgba(0,255,157,0.3)] whitespace-nowrap z-20">
+                                    Recommended Choice
                                 </div>
                             )}
 
                             <div className="mb-8">
                                 <h3 className="font-syne font-bold text-xl text-white mb-2">{plan.name}</h3>
-                                <div className="flex items-baseline gap-1 mb-2">
-                                    <span className="text-4xl md:text-5xl font-black text-white tracking-tight">{plan.price}</span>
-                                    {plan.priceSuffix && <span className="text-zinc-500 text-lg">{plan.priceSuffix}</span>}
+                                <div className="inline-flex items-baseline gap-2 mb-3">
+                                    <span className="text-3xl md:text-4xl font-black text-white tracking-tighter">{plan.price}</span>
+                                    {plan.priceSuffix && <span className="text-zinc-500 text-sm font-bold uppercase tracking-widest">{plan.priceSuffix}</span>}
                                 </div>
                                 <p className="text-[var(--accent)] text-xs font-bold uppercase tracking-widest opacity-80">{plan.subtitle}</p>
                             </div>
@@ -167,17 +167,19 @@ export default function Pricing() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="max-w-4xl mx-auto bg-white/[0.02] border border-white/[0.05] rounded-[32px] p-8 md:p-12"
+                    className="max-w-5xl mx-auto bg-[#080808] border border-white/[0.05] rounded-[48px] p-10 md:p-16"
                 >
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-10">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12">
                         <div>
-                            <h3 className="font-syne font-bold text-2xl text-white mb-2 flex items-center gap-3">
-                                <FiZap className="text-[var(--accent)]" />
+                            <h3 className="font-syne font-bold text-2xl md:text-3xl text-white mb-3 flex items-center gap-4">
+                                <div className="p-3 rounded-xl bg-[var(--accent-muted)]">
+                                    <FiZap className="text-[var(--accent)]" size={24} />
+                                </div>
                                 Expert Add-ons
                             </h3>
-                            <p className="text-zinc-500 text-sm">Need something specific? Boost your site with these performance tools.</p>
+                            <p className="text-zinc-500 text-base opacity-80">Boost your performance with these high-ROI specialized tools.</p>
                         </div>
-                        <a href="https://wa.me/919092330688" className="btn btn-outline whitespace-nowrap">
+                        <a href="https://wa.me/919092330688" className="btn btn-outline h-14 px-8 border-white/10 hover:border-[var(--accent)]">
                             Custom Quote ↗
                         </a>
                     </div>

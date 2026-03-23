@@ -136,7 +136,7 @@ export default function Services({ limit, hideHeader }) {
                                         transition={{ duration: 0.8, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
                                         className="group"
                                     >
-                                        <div className="bg-[#0a0a0a] border border-white/[0.05] p-10 h-full rounded-[32px] flex flex-col items-center text-center transition-all duration-700 group-hover:bg-[#0e0e0e] group-hover:border-[var(--accent)]/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
+                                        <div className="bg-[#0a0a0a] border border-white/[0.05] p-10 md:p-14 h-full rounded-[48px] flex flex-col items-center text-center transition-all duration-700 group-hover:bg-[#0e0e0e] group-hover:border-[var(--accent)]/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
 
                                             {/* Dynamic Icon Section */}
                                             <div className="w-20 h-20 mb-8 rounded-2xl bg-white/[0.02] border border-white/[0.04] flex items-center justify-center text-white/90 group-hover:text-[var(--accent)] group-hover:border-[var(--accent-glow)] group-hover:bg-[var(--accent-muted)] transition-all duration-700">

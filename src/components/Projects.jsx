@@ -104,9 +104,9 @@ export default function Projects({ limit }) {
                                 borderBottom: '1px solid rgba(255,255,255,0.05)',
                                 cursor: 'default',
                                 transition: 'all 0.4s cubic-bezier(0.22, 1, 0.36, 1)',
-                                borderRadius: hovered === p.id ? '20px' : '0',
-                                margin: hovered === p.id ? '0 -1.5rem' : '0 0',
-                                padding: hovered === p.id ? '2.5rem 2rem' : '2.5rem 1rem',
+                                borderRadius: hovered === p.id ? '24px' : '0',
+                                margin: hovered === p.id ? '0 -2rem' : '0 0',
+                                padding: hovered === p.id ? '3.5rem 2.5rem' : '3.5rem 1.5rem',
                                 background: hovered === p.id ? 'rgba(255,255,255,0.02)' : 'transparent',
                             }}
                         >
