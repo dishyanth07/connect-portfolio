@@ -5,7 +5,6 @@ import About from '../components/About'
 import Services from '../components/Services'
 import TrustIndicators from '../components/TrustIndicators'
 import Projects from '../components/Projects'
-import Pricing from '../components/Pricing'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 
@@ -18,7 +17,6 @@ export default function Home() {
                 <Services limit={3} />
                 <TrustIndicators />
                 <Projects limit={2} />
-                <Pricing />
                 <Testimonials limit={3} />
                 <Contact />
             </div>
