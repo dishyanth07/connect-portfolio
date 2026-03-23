@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiCheck, FiArrowRight, FiZap } from 'react-icons/fi'
+import { NavLink } from 'react-router-dom'
 
 const plans = [
     {
@@ -130,17 +131,33 @@ export default function Pricing() {
                                 ))}
                             </div>
 
-                            <a
-                                href={plan.link}
-                                className={`mt-auto btn w-full justify-center group/btn h-14 ${
-                                    plan.highlight 
-                                    ? 'bg-[var(--accent)] text-black hover:bg-white' 
-                                    : 'bg-white/5 text-white border border-white/10 hover:bg-white hover:text-black'
-                                }`}
-                            >
-                                {plan.cta}
-                                <FiArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                            </a>
+                            {plan.link.startsWith('http') ? (
+                                <a
+                                    href={plan.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`mt-auto btn w-full justify-center group/btn h-14 ${
+                                        plan.highlight 
+                                        ? 'bg-[var(--accent)] text-black hover:bg-white' 
+                                        : 'bg-white/5 text-white border border-white/10 hover:bg-white hover:text-black'
+                                    }`}
+                                >
+                                    {plan.cta}
+                                    <FiArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                </a>
+                            ) : (
+                                <NavLink
+                                    to={plan.link}
+                                    className={`mt-auto btn w-full justify-center group/btn h-14 ${
+                                        plan.highlight 
+                                        ? 'bg-[var(--accent)] text-black hover:bg-white' 
+                                        : 'bg-white/5 text-white border border-white/10 hover:bg-white hover:text-black'
+                                    }`}
+                                >
+                                    {plan.cta}
+                                    <FiArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                </NavLink>
+                            )}
                         </motion.div>
                     ))}
                 </div>

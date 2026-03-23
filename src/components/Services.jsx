@@ -84,7 +84,6 @@ export default function Services({ limit, hideHeader }) {
         triggerOnce: true
     })
 
-    const displayedServices = limit ? services.slice(0, limit) : services
 
     return (
         <section id="services" ref={ref} className="bg-transparent py-32">
@@ -113,20 +112,22 @@ export default function Services({ limit, hideHeader }) {
                 )}
 
                 <div className="space-y-32">
-                    {serviceCategories.map((cat, catIdx) => (
+                    {serviceCategories.filter((_, idx) => !limit || idx === 0).map((cat, catIdx) => (
                         <div key={cat.name}>
-                            <motion.h3
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                className="font-syne font-bold text-lg md:text-xl text-[var(--accent)] uppercase tracking-[0.2em] mb-12 flex items-center gap-4"
-                            >
-                                <span className="w-12 h-[1px] bg-[var(--accent)] opacity-30" />
-                                {cat.name}
-                            </motion.h3>
+                            {!limit && (
+                                <motion.h3
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="font-syne font-bold text-lg md:text-xl text-[var(--accent)] uppercase tracking-[0.2em] mb-12 flex items-center gap-4"
+                                >
+                                    <span className="w-12 h-[1px] bg-[var(--accent)] opacity-30" />
+                                    {cat.name}
+                                </motion.h3>
+                            )}
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {cat.services.map((svc, i) => (
+                                {(limit ? cat.services.slice(0, limit) : cat.services).map((svc, i) => (
                                     <motion.div
                                         key={svc.title}
                                         initial={{ opacity: 0, y: 40 }}
