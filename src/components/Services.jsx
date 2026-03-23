@@ -47,7 +47,7 @@ export default function Services({ limit, hideHeader }) {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
-                        className="text-center mb-24"
+                        className="text-center mb-28 md:mb-36"
                     >
                         <h2 className="display-lg text-white mb-6 uppercase tracking-tight">
                             Complete <span className="text-[var(--accent)]">Solutions</span>

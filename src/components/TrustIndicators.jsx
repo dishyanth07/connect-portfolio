@@ -22,7 +22,7 @@ const indicators = [
 
 export default function TrustIndicators() {
     return (
-        <section className="pt-0 pb-20 bg-transparent">
+        <section className="pt-24 pb-24 bg-transparent border-t border-white/[0.05]">
             <div className="container-main">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {indicators.map((item, i) => (
