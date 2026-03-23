@@ -87,10 +87,10 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <h1 className="display-xl mb-4 text-center">
+                    <h1 className="display-xl mb-4 text-center mx-auto">
                         <span className="gradient-text-white">We Build Websites That</span>
                         <br />
-                        <span className="text-zinc-500 text-center">Get You More Customers.</span>
+                        <span className="text-zinc-500">Get You More Customers.</span>
                     </h1>
 
                     <p className="text-base md:text-lg text-zinc-400 mb-6 max-w-2xl leading-relaxed opacity-90 text-center mx-auto">
@@ -124,7 +124,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 py-8 border-t border-white/5 bg-black/40 backdrop-blur-md z-30">
-                <div className="container-main flex flex-wrap justify-center md:justify-between items-center gap-8 px-4">
+                <div className="container-main flex flex-wrap justify-center items-center gap-8 md:gap-16 px-4">
                     {[
                         { label: 'SUCCESSFUL PROJECTS', val: '24+' },
                         { label: 'HAPPY CLIENTS', val: '18+' },
@@ -136,7 +136,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8 + i * 0.1 }}
-                            className="text-center md:text-left"
+                            className="text-center"
                         >
                             <div className="font-syne font-bold text-xl md:text-2xl text-white mb-1">{stat.val}</div>
                             <div className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] font-bold">{stat.label}</div>

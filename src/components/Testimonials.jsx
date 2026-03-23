@@ -41,10 +41,10 @@ export default function Testimonials({ limit, hideHeader }) {
                     <motion.div
                         initial={{ opacity: 0, y: 28 }} animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6 }}
-                        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem', flexWrap: 'wrap', gap: '1.5rem' }}
+                        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: '5rem', gap: '2rem' }}
                     >
                         <div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.25rem' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '1.25rem' }}>
                                 <span className="section-num">05</span>
                                 <span style={{ width: '40px', height: '1px', background: '#333' }} />
                                 <span className="label-text">Testimonials</span>
@@ -54,7 +54,7 @@ export default function Testimonials({ limit, hideHeader }) {
                             </h2>
                         </div>
                         {limit && (
-                            <NavLink to="/about" className="btn btn-outline text-sm no-underline mb-2">
+                            <NavLink to="/about" className="btn btn-outline text-sm no-underline px-8 py-3">
                                 Read All Success Stories ↗
                             </NavLink>
                         )}
