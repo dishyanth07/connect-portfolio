@@ -1,11 +1,10 @@
 import { NavLink } from 'react-router-dom'
-import { FiInstagram, FiLinkedin, FiTwitter, FiGithub, FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
+import { FiInstagram, FiLinkedin, FiGithub, FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 
 const socials = [
-    { icon: FiInstagram, href: 'https://instagram.com' },
+    { icon: FiInstagram, href: 'https://www.instagram.com/itz_me_dishxx_/?hl=en' },
     { icon: FiLinkedin, href: 'https://linkedin.com' },
-    { icon: FiTwitter, href: 'https://twitter.com' },
-    { icon: FiGithub, href: 'https://github.com/dishyanth' },
+    { icon: FiGithub, href: 'https://github.com/dishyanth07' },
 ]
 
 const clients = ['Nexus', 'Quantum', 'Urban Canvas', 'Velocity', 'Lumina Health']

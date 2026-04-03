@@ -42,11 +42,11 @@ export default function Navbar() {
                 <NavLink to="/" className="flex items-center gap-3 no-underline group cursor-pointer">
                     <img
                         src="/logo.png"
-                        alt="INFOZ Logo"
+                        alt="iZ Logo"
                         className="w-10 h-10 object-contain transition-transform group-hover:scale-105"
                     />
                     <div className="flex flex-col">
-                        <span className="font-syne font-bold text-lg tracking-tight text-white leading-none">INFOZ</span>
+                        <span className="font-syne font-bold text-lg tracking-tight text-white leading-none">iZ</span>
                     </div>
                 </NavLink>
 
